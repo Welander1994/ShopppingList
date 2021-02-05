@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/stylesheet.css">
+    <link href="http://fonts.cdnfonts.com/css/virus-43" rel="stylesheet">   
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+                     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
     <title>vuejsTest - shoppingList</title>
 </head>
 <body>
@@ -21,9 +26,9 @@
 
     <h1>shopping list</h1>
 <div class="input">
-    <form v-on:submit.prenvent="addItem">
-        <input v-model="newItem" type="text" placeholder="Add items"/>
-        <button v-on:click="addItem">Submit</button>
+    <form>
+        <input v-model="newItem" type="text" placeholder="Add items" />
+        <button v-on:click="addItem"><i class="fas fa-plus"></i></button>
     </form>
 </div>
 
@@ -32,10 +37,10 @@
     <li v-for="(item, key) in shoppingList"  v-bind:class="{collected: item.collected}">
         <div class="items">
             <input type="checkbox" v-model="item.collected" v-on:change="save"/>
-            <span>{{item.name}} {{key}} </span>
+            <span>{{item.name}} </span>
         </div>
         <div class="itemRemover">
-            <button id="delete" v-on:click="deleteItem(key)">X</button>
+            <button id="delete" v-on:click="deleteItem(key)"><i class="fas fa-ban"></i></button>
         </div>
     </li>
 </ul>

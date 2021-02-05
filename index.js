@@ -22,6 +22,7 @@ var shoppingList = new Vue({
         addItem: function(e) {
             
             if(this.newItem !== ""){
+                e.preventDefault();
                 this.shoppingList.push({
                     name: this.newItem,
                     collected: false,
