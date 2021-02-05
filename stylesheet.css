@@ -1,0 +1,32 @@
+#shoppingList  {
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    background-color: rgb(164, 179, 164);
+}
+
+#shoppingList form {
+    display: flex;
+    justify-content: center;
+}
+
+#shoppingList ul {
+    padding: 0;
+}
+#shoppingList ul li {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none; 
+    transition: 1s ease-in-out;
+}
+
+#shoppingList ul {
+    background-color: deeppink;
+}
+
+ul li.collected{
+    transition: 1s ease-in-out;
+    background-color: rgb(122, 64, 95);
+}
