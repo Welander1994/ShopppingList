@@ -29,7 +29,7 @@ h1 {
 }
 
 .input input {
-    width: 275px;
+    min-width: 275px;
     height: 30px;
     padding: 0 0 0 10px;
     margin: 0;
