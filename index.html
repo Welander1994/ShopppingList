@@ -18,6 +18,9 @@
 -->
 
 <div id="shoppingList">
+
+    <h1>shopping list</h1>
+
     <form v-on:submit.prenvent="addItem">
         <input v-model="newItem" type="text" placeholder="Add items"/>
         <button v-on:click="addItem">Submit</button>
@@ -27,12 +30,15 @@
 <ul>
     <li v-for="(item, key) in shoppingList"  v-bind:class="{collected: item.collected}">
         <span>{{item.name}} {{key}} </span>
-        <input type="checkbox" v-model="item.collected" v-on:change="save"/>
-        <button v-on:click="deleteItem(key)">Delete</button>
+        <input id="checkOff" type="checkbox" v-model="item.collected" v-on:change="save"/>
+        <button id="delete" v-on:click="deleteItem(key)">X</button>
     </li>
 </ul>
 
+<div class="clearAll">
 <button v-on:click="clearAll">Clear all</button>
+
+</div>
 
 </div>
 

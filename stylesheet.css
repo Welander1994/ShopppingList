@@ -1,20 +1,34 @@
+body {
+    padding: 0;
+    margin: 0;
+}
 #shoppingList  {
     margin: 0;
     padding: 10px;
-    display: flex;
-    flex-direction: column;
-    width: 500px;
     background-color: rgb(164, 179, 164);
 }
 
 #shoppingList form {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 #shoppingList ul {
     padding: 0;
 }
+
+#delete {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+
+
 #shoppingList ul li {
     display: flex;
     justify-content: flex-end;
@@ -24,9 +38,15 @@
 
 #shoppingList ul {
     background-color: deeppink;
+    font-size: 1.5rem;
 }
 
 ul li.collected{
     transition: 1s ease-in-out;
     background-color: rgb(122, 64, 95);
+}
+
+.clearAll {
+    display: flex;
+    justify-content: flex-end;
 }
