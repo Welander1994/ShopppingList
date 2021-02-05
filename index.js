@@ -4,7 +4,8 @@ var shoppingList = new Vue({
     data: {
         newItem: "",
         shoppingList: [
-          
+            {name: "mælk", collected: false},
+            {name: "smør", collected: false}
         ],
     },
 
