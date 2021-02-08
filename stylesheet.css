@@ -2,7 +2,12 @@ body {
     padding: 0;
     margin: 0;
     background-color: rgb(24, 24, 24);
-    color: rgb(175, 175, 175);
+    background-image: url("/img/shoppingcart_1.png");
+    background-repeat: no-repeat;
+    background-size: 45vh;
+    background-attachment: fixed;
+    background-position-y: 90%; 
+    background-position-x: 90%; 
     font-family: 'VT323', monospace;
     display: flex;
     justify-content: center;
@@ -17,9 +22,9 @@ body {
 h1 {
     display: flex;
     justify-content: center;
-    font-family: 'Virus43', sans-serif;
+    font-family: 'VT323', monospace;
     text-transform: uppercase;
-    font-weight: bolder;
+    font-weight: lighter;
     color: rgb(246, 231, 29);
     font-size: 3rem;
 }
@@ -31,7 +36,7 @@ h1 {
 }
 
 .input input {
-    width: 295px;
+    width: 275px;
     height: 30px;
     padding: 0 0 0 10px;
     margin: 0;
