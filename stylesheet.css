@@ -18,9 +18,9 @@ body {
 h1 {
     display: flex;
     justify-content: center;
-    font-family: 'Virus43', sans-serif;
+    font-family: 'VT323', monospace;
     text-transform: uppercase;
-    font-weight: bolder;
+    font-weight: lighter;
     color: rgb(246, 231, 29);
     font-size: 3rem;
 }
