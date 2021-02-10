@@ -19,6 +19,7 @@
 <div class="input">
     <form>
         <input v-model="newItem" type="text" placeholder="Add items" />
+        <input v-model="newLink" type="text" placeholder="Add link" />
         <button v-on:click="addItem"><i class="fas fa-plus"></i></button>
     </form>
 </div>
@@ -28,13 +29,18 @@
     <li v-for="(item, key) in shoppingList"  v-bind:class="{collected: item.collected}">
         <div class="items">
             <input type="checkbox" v-model="item.collected" v-on:change="save"/>
-            <span>{{item.name}} </span>
+            
+            
+            <a :href="item.link">{{item.name}}</a>
+            
         </div>
+       
         <div class="itemRemover">
             <button id="delete" v-on:click="deleteItem(key)"><i class="fas fa-ban"></i></button>
         </div>
     </li>
 </ul>
+
 
     <div class="clearAll">
         <button v-on:click="clearAll">Clear all</button>

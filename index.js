@@ -3,6 +3,7 @@ var shoppingList = new Vue({
     el: "#shoppingList",
     data: {
         newItem: "",
+        newLink: "",
         shoppingList: [
             {name: "mælk", collected: false},
             {name: "smør", collected: false}
@@ -26,6 +27,7 @@ var shoppingList = new Vue({
                 this.shoppingList.push({
                     name: this.newItem,
                     collected: false,
+                    link: this.newLink,
                 })
                 this.newItem = ""
                 this.save()
