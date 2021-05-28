@@ -1,161 +1,153 @@
 body {
-    padding: 0;
-    margin: 0;
-    background-color: rgb(24, 24, 24);
-    background-image: url("./img/shoppingcart_1.png");
-    background-repeat: no-repeat;
-    background-size: 45vh;
-    background-attachment: fixed;
-    background-position-y: 90%; 
-    background-position-x: 90%; 
-    font-family: 'VT323', monospace;
-    display: flex;
-    justify-content: center;
+  padding: 0;
+  margin: 0;
+  background-color: rgb(24, 24, 24);
+  background-image: url("./img/shoppingcart_1.png");
+  background-repeat: no-repeat;
+  background-size: 45vh;
+  background-attachment: fixed;
+  background-position-y: 90%;
+  background-position-x: 90%;
+  font-family: "VT323", monospace;
+  display: flex;
+  justify-content: center;
 }
-#shoppingList  {
-    margin: 0;
-    padding: 10px;
-    transition: 0.5s ease-in-out;
-    width: 375px;
+#shoppingList {
+  margin: 0;
+  padding: 10px;
+  transition: 0.5s ease-in-out;
+  width: 350px;
 }
 
 h1 {
-    display: flex;
-    justify-content: center;
-    font-family: 'VT323', monospace;
-    text-transform: uppercase;
-    font-weight: lighter;
-    color: rgb(246, 231, 29);
-    font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  font-family: "VT323", monospace;
+  text-transform: uppercase;
+  font-weight: lighter;
+  color: rgb(246, 231, 29);
+  font-size: 3rem;
 }
 
 .input {
-    display: flex;
-    
-
+  display: flex;
 }
 
 .input input {
-    width: 275px;
-    height: 30px;
-    padding: 0 0 0 10px;
-    margin: 0;
-    border: 0;
-    background-color:  rgb(38, 38, 38);
-    color: rgb(175, 175, 175);
-    border-radius: 10px;
-    height: 40px;
-    font-family: 'VT323', monospace;
-    font-size: 1.4rem;
+  width: 270px;
+  height: 30px;
+  padding: 0 0 0 10px;
+  margin: 0;
+  border: 0;
+  background-color: rgb(38, 38, 38);
+  color: rgb(175, 175, 175);
+  border-radius: 10px;
+  height: 40px;
+  font-family: "VT323", monospace;
+  font-size: 1.4rem;
 }
 
 .input input:focus {
-    outline: none;
-  }
+  outline: none;
+}
 
 input::placeholder {
-    padding: 0 0 0 0px;
-    color: rgba(246, 232, 29, 1);
-    font-size: 1.4rem;
-    font-family: 'VT323', monospace
-    
+  padding: 0 0 0 0px;
+  color: rgba(246, 232, 29, 1);
+  font-size: 1.4rem;
+  font-family: "VT323", monospace;
 }
 
 .input button {
-    height: 40px;
-    border-radius: 10px;
-    padding: 0 10px 0 10px;
-    margin: 0 0 0 3px;
-    border: 0;
-    width: 60px;
-    background-color:  rgb(38, 38, 38);
-    color: rgb(246, 231, 29);
-    font-size: 1.4rem;
+  height: 40px;
+  border-radius: 10px;
+  padding: 0 10px 0 10px;
+  margin: 0 0 0 3px;
+  border: 0;
+  width: 60px;
+  background-color: rgb(38, 38, 38);
+  color: rgb(246, 231, 29);
+  font-size: 1.4rem;
 }
 
 #shoppingList ul {
-    
-    padding: 0;
+  padding: 0;
 }
 
 #shoppingList ul li {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 5px 0 5px;
-    margin-top: 5px;
-    height: 40px;
-    list-style: none;
-    border-radius: 10px;
-    background-color: rgb(38, 38, 38);
-    transition: 0.5s ease-in-out;
-    color: rgb(246, 231, 29);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5px 0 5px;
+  margin-top: 5px;
+  height: 40px;
+  list-style: none;
+  border-radius: 10px;
+  background-color: rgb(38, 38, 38);
+  transition: 0.5s ease-in-out;
+  color: rgb(246, 231, 29);
 }
 
 .items {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 #shoppingList ul li span {
-    padding-left: 10px;
-    text-transform: capitalize;
-    font-size: 1.4rem;
+  padding-left: 10px;
+  text-transform: capitalize;
+  font-size: 1.4rem;
 }
 
-
-
-#shoppingList ul li.collected{
-    transition: 0.5s ease-in-out;
-    background-color: rgb(28, 28, 28);
-    color:rgb(38, 38, 38)
+#shoppingList ul li.collected {
+  transition: 0.5s ease-in-out;
+  background-color: rgb(28, 28, 28);
+  color: rgb(38, 38, 38);
 }
 
-#shoppingList ul li input{
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    -o-appearance: none;
-    appearance: none;
+#shoppingList ul li input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
 
-    
-    height: 16px;
-    width: 16px;
-    border: 2px solid rgb(246, 231, 29);
-    border-radius: 10px;
-    outline: none;
-    transition: 0.5s ease-in-out;
-    cursor: pointer;
+  height: 16px;
+  width: 16px;
+  border: 2px solid rgb(246, 231, 29);
+  border-radius: 10px;
+  outline: none;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
 }
 
 #shoppingList ul li input:checked {
-    background-color:  rgb(246, 231, 29);
+  background-color: rgb(246, 231, 29);
 }
 
 ul li button {
-    background-color: rgba(38, 38, 38, 0);
-    border: 0;
-    color:rgb(246, 231, 29);
-    text-transform: uppercase;
-    width: 20px;
-    height: 20px;
-    padding:  0 20px 0 0;
-    font-size: 1.2rem;
-
+  background-color: rgba(38, 38, 38, 0);
+  border: 0;
+  color: rgb(246, 231, 29);
+  text-transform: uppercase;
+  width: 20px;
+  height: 20px;
+  padding: 0 20px 0 0;
+  font-size: 1.2rem;
 }
 
 .clearAll button {
-    height: 40px;
-    border-radius: 10px;
-    padding: 0;
-    margin: 0;
-    border: 0;
-    width: 100%;
-    background-color:  rgb(38, 38, 38);
-    color: rgb(246, 231, 29);
-    font-size: 1.4rem;
-    font-family: 'VT323', monospace
+  height: 40px;
+  border-radius: 10px;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  width: 100%;
+  background-color: rgb(38, 38, 38);
+  color: rgb(246, 231, 29);
+  font-size: 1.4rem;
+  font-family: "VT323", monospace;
 }
 
 .clearAll button:focus {
-    outline: none;
+  outline: none;
 }
